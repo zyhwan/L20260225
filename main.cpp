@@ -6,7 +6,6 @@ int main()
 {
 	int Number1 = 0;
 	int Number2 = 0;
-
 	int Number3 = 0;
 
 	cin >> Number1 >> Number2 >> Number3;
