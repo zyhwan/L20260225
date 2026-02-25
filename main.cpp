@@ -1,20 +1,51 @@
 ﻿#include<iostream>
+#include<conio.h>
 
 using namespace std;
 
 int main()
 {
-	int Number1 = 0;
-	int Number2 = 0;
-	int Number3 = 0;
+	int Map[10][10] = {
+	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
+	};
 
-	cin >> Number1 >> Number2 >> Number3;
+	int PlayerX = 1;
+	int PlayerY = 1;
 
-	cout << "합: " << Number1 + Number2 + Number3 << '\n';
-	cout << "차: " << Number1 - Number2 - Number3 << '\n';
-	cout << "곱: " << Number1 * Number2 * Number3 << '\n';
-	cout << "몫: " << Number1 / Number2 / Number3 << '\n';
-	cout << "나머지: " << Number1 % Number2 % Number3 << '\n';
+	for (;;)
+	{
+		for (int Y = 0; Y < 10; ++Y)
+		{
+			for (int X = 0; X < 10; ++X)
+			{
+				if (PlayerX == X && PlayerY == Y)
+				{
+					cout << "@";
+				}
+				else if (Map[Y][X] == 1)
+				{
+					cout << '#';
+				}
+				else if (Map[Y][X] == 0) {
+					cout << ' ';
+				}
+				cout << ' ';
+			}
+			cout << '\n';
+		}
 
+		int Temp;
+		Temp = _getch();
+		PlayerX++;
+	}
 	return 0;
 }
