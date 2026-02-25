@@ -1,19 +1,19 @@
-#include<iostream>
+ï»¿#include<iostream>
 
 using namespace std;
 
 int main()
 {
-	int num1 = 0;
-	int num2 = 0;
+	int Number1 = 0;
+	int Number2 = 0;
 
-	cin >> num1 >> num2;
+	cin >> Number1 >> Number2;
 
-	cout << "ÇÕ: " << num1 + num2 << '\n';
-	cout << "Â÷: " << num1 - num2 << '\n';
-	cout << "°ö: " << num1 * num2 << '\n';
-	cout << "¸ò: " << num1 / num2 << '\n';
-	cout << "³ª¸ÓÁö: " << num1 % num2 << '\n';
+	cout << "í•©: " << Number1 + Number2 << '\n';
+	cout << "ì°¨: " << Number1 - Number2 << '\n';
+	cout << "ê³±: " << Number1 * Number2 << '\n';
+	cout << "ëª«: " << Number1 / Number2 << '\n';
+	cout << "ë‚˜ë¨¸ì§€: " << Number1 % Number2 << '\n';
 
 	return 0;
 }
